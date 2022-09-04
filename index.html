@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="docheck(); return false">
+        <h3>Even And Odd Checker</h3>
+        <br>
+        <br>
+        <p>The 0 shows Even and 1 shows Odd.</p>
+        <br>
+        Enter Number: <input type="number" id="num">
+        <button type="submit">Check</button>
+        <br>
+        <h1 id="result"></h1>
+    </form>
+
+    <script>
+        function docheck()
+        {
+        let num1 = document.querySelector("#num").value;
+
+        let result = num1 % 2;
+
+        document.querySelector("#result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
